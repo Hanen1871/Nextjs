@@ -2,100 +2,204 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+   <div className="flex flex-wrap gap-10 justify-center ">
+    <div className="card  rounded-2xl  grid grid-cols-1 items-center text-center  translate hover:-translate-y-5 duration-500   bg-yellow-100 " style={{width: "18rem"}}>
+       
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+       <Image 
+     src="/telefonlari.jpg"
+     width={500}
+     height={500}
+     alt="Picture of the author"
+   className='  rounded-t-2xl h-52 top-0'
+   />
+ <div className="card-body ">
+   <h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+   <hr/>
+   <p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+       produits high-tech aux meilleurs prix.
+        Comparez et achetez en livraison rapide à domicile</p>
+ <a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0 m-28 hover:bg-lime-100">Add</a>
+
+ </div>
+
+
+     
+          
     </div>
-  );
+
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center  translate hover:-translate-y-5 duration-500   bg-yellow-100 " style={{width: "18rem"}}>
+       
+
+<Image
+src="/OIP (2).jpg"
+width={500}
+height={500}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0'
+/>
+<div className="card-body ">
+<h3 className="card-title p-2 ">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center translate hover:-translate-y-5 duration-500   bg-yellow-100  " style={{width: "18rem"}}>
+       
+
+<Image
+src="/Vivo-V25-5G-Colors-768x512.jpg"
+width={500}
+height={500}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0'
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center  translate hover:-translate-y-5 duration-500   bg-yellow-100 " style={{width: "18rem"}}>
+       
+
+<Image
+src="/OIP.jpg"
+width={500}
+height={300}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0'
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center translate hover:-translate-y-5 duration-500   bg-yellow-100  " style={{width: "18rem"}}>
+       
+
+<Image
+src="/OIP (1).jpg"
+width={500}
+height={400}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0'
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center   translate hover:-translate-y-5 duration-500   bg-yellow-100" style={{width: "18rem"}}>
+       
+
+<Image
+src="/LD0005977671.jpg"
+width={500}
+height={500}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0 '
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center   translate hover:-translate-y-5 duration-500   bg-yellow-100" style={{width: "18rem"}}>
+       
+
+<Image
+src="/Xiaomi-POCO-X5-Pro-przod-tyl.webp"
+width={500}
+height={500}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0 '
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center   translate hover:-translate-y-5 duration-500   bg-yellow-100" style={{width: "18rem"}}>
+       
+
+<Image
+src="/Xiaomi-POCO-X5-Pro-5G-6-128GB-Smartphone-667Zoll.webp"
+width={500}
+height={500}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0 '
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+<div className="card  rounded-2xl  grid grid-cols-1 items-center text-center   translate hover:-translate-y-5 duration-500   bg-yellow-100" style={{width: "18rem"}}>
+       
+
+<Image
+src="/2024-en-iyi-fiyat-performans-telefonlari.jpg"
+width={500}
+height={500}
+alt="Picture of the author"
+className='  rounded-t-2xl h-52 top-0 '
+/>
+<div className="card-body ">
+<h3 className="card-title p-2">SMARTPHONE ET MOBILE</h3>
+<hr/>
+<p className="card-text p-2 ">Achat sur internet iPhone, Smartphone et 
+produits high-tech aux meilleurs prix.
+ Comparez et achetez en livraison rapide à domicile</p>
+<a href="#" className="bg-slate-500 nb-20  rounded-2xl p-2 px-7 py-0  hover:bg-lime-100">Add</a>
+
+</div>
+
+</div>
+
+
+</div>
+ );
+  
 }

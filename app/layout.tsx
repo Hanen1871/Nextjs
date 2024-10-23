@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +27,57 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body 
+    className={`${geistSans.variable} ${geistMono.variable} antialiased`  } >
+        <nav className="bg-gradient-to-r from-sky-200 via-amber-100 to-pink-50"> 
+          <ul className="flex  justify-around p-5  ">
+            <Image
+             src='/Logo-2.0.webp'
+             width={100}
+             height={100}
+             alt="Picture of the author" className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+       <Link href="/"> <li >Home</li></Link>
+       <Link  href="/about"> <li>About</li></Link>
+       <Link  href="/contact"> <li>Contact</li></Link>
+
+        </ul></nav>
+        
+       <div className="pt-10 pb-80 bg-yellow-50"> {children} </div> 
+
+       <footer className="bg-gradient-to-r from-pink-50 via-amber-100  to-sky-200  pt-5">
+
+        <div className="flex justify-evenly flex-nowrap gap-x-0.5 "><h1>All copyright reserved 2024 </h1>
+       <div className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+       <a href="https://www.facebook.com/phonestore06200/?hl=fr"  title="Suivez sur Facebook" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="-2 -2 24 24"><g fill="black">
+          <path d="M8.695 6.937v1.377H7.687v1.683h1.008V15h2.072V9.997h1.39s.131-.807.194-1.69h-1.576v-1.15c0-.173.226-.404.45-.404h1.128V5h-1.535C8.644 5 8.695 6.685 8.695 6.937"/>
+        <path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4"/></g></svg>
+        </a>
+      </div>    
+         <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+         <a href="https://www.instagram.com/phonestore06200/?hl=fr"  title="Suivez sur Instagram" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+        <path fill="black" d="M16 12a4 4 0 1 0-1.172 2.829A3.84 3.84 0 0 0 16 12.06l-.001-.063zm2.16 0a6.135 6.135 0 1 1-1.797-4.359a5.92 5.92 0 0 1 1.798 4.256l-.001.109zm1.687-6.406v.002a1.44 1.44 0 1 1-.422-1.018c.256.251.415.601.415.988v.029v-.001zm-7.84-3.44l-1.195-.008q-1.086-.008-1.649 0t-1.508.047c-.585.02-1.14.078-1.683.17l.073-.01c-.425.07-.802.17-1.163.303l.043-.014a4.12 4.12 0 0 0-2.272 2.254l-.01.027a6 6 0 0 0-.284 1.083l-.005.037a12 12 0 0 0-.159 1.589l-.001.021q-.039.946-.047 1.508t0 1.649t.008 1.195t-.008 1.195t0 1.649t.047 1.508c.02.585.078 1.14.17 1.683l-.01-.073c.07.425.17.802.303 1.163l-.014-.043a4.12 4.12 0 0 0 2.254 2.272l.027.01c.318.119.695.219 1.083.284l.037.005c.469.082 1.024.14 1.588.159l.021.001q.946.039 1.508.047t1.649 0l1.188-.024l1.195.008q1.086.008 1.649 0t1.508-.047c.585-.02 1.14-.078 1.683-.17l-.073.01c.425-.07.802-.17 1.163-.303l-.043.014a4.12 4.12 0 0 0 2.272-2.254l.01-.027c.119-.318.219-.695.284-1.083l.005-.037c.082-.469.14-1.024.159-1.588l.001-.021q.039-.946.047-1.508t0-1.649t-.008-1.195t.008-1.195t0-1.649t-.047-1.508c-.02-.585-.078-1.14-.17-1.683l.01.073a6.3 6.3 0 0 0-.303-1.163l.014.043a4.12 4.12 0 0 0-2.254-2.272l-.027-.01a6 6 0 0 0-1.083-.284l-.037-.005a12 12 0 0 0-1.588-.159l-.021-.001q-.946-.039-1.508-.047t-1.649 0zM24 12q0 3.578-.08 4.953a6.64 6.64 0 0 1-6.985 6.968l.016.001q-1.375.08-4.953.08t-4.953-.08a6.64 6.64 0 0 1-6.968-6.985l-.001.016q-.08-1.375-.08-4.953t.08-4.953A6.64 6.64 0 0 1 7.061.079L7.045.078q1.375-.08 4.953-.08t4.953.08a6.64 6.64 0 0 1 6.968 6.985l.001-.016Q24 8.421 24 12"/></svg>
+      
+        </a>
+        </div>    
+        <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">
+        <a href="https://www.tiktok.com/phonestore06200/?hl=fr"  title="Suivez sur Tiktok" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+        <g fill="none" stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="black">
+ <path d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"/>
+          <path d="M10.536 11.008c-.82-.116-2.69.075-3.606 1.77s.007 3.459.584 4.129c.569.627 2.378 1.814 4.297.655c.476-.287 1.069-.502 1.741-2.747l-.078-8.834c-.13.973.945 3.255 4.004 3.525"/>
+        </g></svg>
+        </a>
+        </div>
+        <div className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">
+        <a href="https://www.youtube.com/phonestore06200/?hl=fr"  title="Suivez sur Youtube" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+        <path fill="black" d="M8.927 2.5h6.146c1.824 0 3.293 0 4.45.155c1.2.162 2.21.507 3.012 1.31c.803.802 1.148 1.813 1.31 3.013C24 8.134 24 9.603 24 11.427v1.146c0 1.824 0 3.293-.155 4.45c-.162 1.2-.507 2.21-1.31 3.012c-.802.803-1.812 1.148-3.013 1.31c-1.156.155-2.625.155-4.449.155H8.927c-1.824 0-3.293 0-4.45-.155c-1.2-.162-2.21-.507-3.013-1.31c-.802-.802-1.147-1.812-1.309-3.013C0 15.866 0 14.397 0 12.573v-1.146c0-1.824 0-3.293.155-4.45c.162-1.2.507-2.21 1.31-3.013c.802-.802 1.813-1.147 3.013-1.309C5.634 2.5 7.103 2.5 8.927 2.5M4.744 4.638c-.978.131-1.496.372-1.865.74c-.37.37-.61.888-.741 1.866C2.002 8.251 2 9.586 2 11.5v1c0 1.914.002 3.249.138 4.256c.131.978.372 1.496.74 1.865c.37.37.888.61 1.866.742c1.007.135 2.342.137 4.256.137h6c1.914 0 3.249-.002 4.256-.137c.978-.132 1.496-.373 1.865-.742c.37-.369.61-.887.742-1.865c.135-1.007.137-2.342.137-4.256v-1c0-1.914-.002-3.249-.137-4.256c-.132-.978-.373-1.496-.742-1.865c-.369-.37-.887-.61-1.865-.741C18.249 4.502 16.914 4.5 15 4.5H9c-1.914 0-3.249.002-4.256.138m4.057 2.326l8.695 5.037l-8.695 5.036zm2 3.47v3.134L13.506 12z"/></svg>
+        </a>
+       </div>
+       </div>
+       </footer>
       </body>
     </html>
   );
